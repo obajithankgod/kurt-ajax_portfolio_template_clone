@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <img src="images/logo.jpg" alt="still loading" style="width: 2%; margin-left: 10px; cursor: pointer;">
+            <h3 id="logo">envato</h3>
+            <button type="button">Buy now</button>
+
+        </div>
+    </header>
+
+    <main class="mySlyde-container">
+
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+        <div class="banner">
+            <h2 id="banner-text">KURT</h2>
+            <div class="toggle-bars">
+                <input type="checkbox" name="icon" id="icon">
+                <label for="icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <p class="icon-infor1">MENU</p>
+                <p class="icon-infor2">OPEN</p>
+                <p class="icon-infor3">CLOSE</p>
+            </div>
+
+
+        </div>
+        <div class="toggle-container">
+            <div class="toggle-item">
+                <h1><a class="home-page" href="">Index</a></h1>
+                <h1><a class="home-page" href="">About</a></h1>
+                <h1><a class="home-page" href="">Contact</a></h1>
+                <h1><a class="home-page" href="">Buy Now</a></h1>
+            </div>
+        </div>
+        <div class="mySlyder fade">
+            <img src="images/watch.png" alt="still loading" style="width: 100%; height: 94vh; object-fit: cover;">
+            <div class="numbertext">
+                01
+            </div>
+            <div class="banner-infor">
+                <p class="mytext1">MODEL DESIGN</p>
+                <h1 class="mytext2">Golf Watch.</h1>
+               <p><a class="border-buttom-hover-effect" href="#">View Project</a></p>
+            </div>
+        </div>
+
+
+        <div class="pagination">
+            <i class="fa fa-angle-left" style="font-size: 40px; font-weight: 600;" onclick="plusSlides(-1)"></i>
+
+            <i class="fa fa-angle-right" style="font-size: 40px; font-weight: 600;" onclick="plusSlides(1)"></i>
+        </div>
+        <div class="mySlyder fade">
+            <img src="images/fitness.png" alt="still loading" style="width: 100%; height: 94vh;object-fit: cover;">
+            <div class="numbertext">
+                02
+            </div>
+            <div class="banner-infor2">
+                <p class="mytext-for-fitness1">PHOTOGRAPHY</p>
+                <h1 class="mytext-for-fitness2">Sports Fitness.</h1>
+                <p class="mytext-for-fitness3">View Project</p>
+            </div>
+
+        </div>
+
+        <div class="mySlyder fade">
+            <img src="images/fashion.png" alt="still loading" style="width: 100%; height: 94vh; object-fit: cover;">
+            <div class="numbertext">
+                03
+            </div>
+            <div class="banner-infor3">
+                <p class="mytext-for-photo1">PHOTOGRAPHY</p>
+                <h1 class="mytext-for-photo2">Ultimate Neon.</h1>
+                <p class="mytext-for-photo3">View Project</p>
+            </div>
+
+        </div>
+
+        <div class="mySlyder fade">
+            <img src="images/housedesign.png" alt="still loading" style="width: 100%; height: 94vh; object-fit: cover;">
+            <div class="numbertext">
+                04
+            </div>
+            <div class="banner-infor4">
+                <p class="mytext-for-house1">INTERIOR DESIGN</p>
+                <h1 class="mytext-for-house2">Luxury House.</h1>
+                <p class="mytext-for-house3">View Project</p>
+            </div>
+
+        </div>
+
+
+        <div class="mySlyder fade">
+            <div class="numbertext">
+                05
+            </div>
+            <div class="banner-infor5">
+                <p class="mytext-for-colors1">VISUAL DESIGN</p>
+                <h1 class="mytext-for-colors2">Splash Colors.</h1>
+                <p class="mytext-for-colors3">View Project</p>
+            </div>
+            <img src="images/colorsplash.png" alt="still loading" style="width: 100%; height: 94vh; object-fit: cover;">
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+    <script type="text/javaScript">
+    document.querySelector(".icon").onclick = function (e) {
+        var toggle = document.querySelector(".toggle-container");
+        var icon = document.querySelector(".icon");
+
+        toggle-container.classList.toggle("home-page");
+        icon.classList.toggle("home-page");
+
+        e.preventDefualt();
+
+
+        
+    }
+    </script>
+
+
+
+
+
+    <script type="text/javaScript">
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+
+        document.addEventListener("mousemove", function(e) {
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+            
+        });
+    
+    </script>
+    r
+
+
+
+    <script type="text/javaScript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlyder");
+
+        if (n > slides.length) {
+            slideIndex = 1
+            
+        }
+        if (n < 1) {slideIndex = slides.length
+            
+        }
+        for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        
+        slides[slideIndex-1].style.display = "block";
+    }
+
+    </script>
+
+</body>
+
+</html>
