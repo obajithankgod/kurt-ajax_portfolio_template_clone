@@ -14,20 +14,49 @@
 
     <header>
         <div class="header">
-            <img src="images/logo.jpg" alt="still loading" style="width: 2%; margin-left: 10px; cursor: pointer;">
+            <img id="myLogo" src="images/logo.jpg" alt="still loading" >
             <h3 id="logo">envato</h3>
             <button type="button">Buy now</button>
 
         </div>
+        
+
     </header>
+    
+
+
+    
 
     <main class="mySlyde-container">
 
-        <div class="cursor"></div>
-        <div class="cursor2"></div>
+        <nav class="menu">
+            <div class="nav-container">
+                <ul class="nav-items">
+                    <li><a class="home-page" href="index.html">Index</a></li>
+                    <li><a class="home-page" href="">About</a></li>
+                    <li><a class="home-page" href="">Contact</a></li>
+                    <li><a class="home-page" href="">Buy Now</a></li>
+                 
+                 </ul>
+                
+            </div>
+            <div class="footer-infor">
+                <a class="myaddress-infor" href="">hello@example.com</a><br>
+                <p class="conpany-id"><a>(222) 123 - 4567</a></p>
+                <p id="myaddress-infor">121 king st, Melbourne Vic 3000, Australia.</p>
+
+                <a href=""><i class="fa fa-instagram" aria-hidden="true" id="social-icon"></i></a>
+                <a href=""><i class="fa fa-facebook-square" aria-hidden="true" id="social-icon"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true" id="social-icon"></i></a>
+                <a href=""><i class="fa fa-linkedin-square" aria-hidden="true" id="social-icon"></i></a>
+
+            </div>
+        </nav>
         <div class="banner">
-            <h2><a id="banner-text" href="#">KURT</a></h2>
-            <div class="toggle-bars">
+            <div class="cursor"></div>
+            <div class="cursor2"></div>
+            <h2><a id="banner-text" href="index.html">KURT</a></h2>
+            <div class="toggle-bars" onclick="myToggle()">
                 <input type="checkbox" name="icon" id="icon">
                 <label for="icon">
                     <div></div>
@@ -38,19 +67,12 @@
                 <p class="icon-infor2">OPEN</p>
                 <p class="icon-infor3">CLOSE</p>
             </div>
-
+            
 
         </div>
-        <div class="toggle-container">
-            <div class="toggle-item">
-                <a class="home-page" href="">Index</a>
-                <a class="home-page" href="">About</a>
-                <a class="home-page" href="">Contact</a>
-                l<a class="home-page" href="">Buy Now</a>
-            </div>
-        </div>
+        
         <div class="mySlyder fade">
-            <img src="images/watch.png" alt="still loading" style="width: 100%; object-fit: cover;">
+            <img src="images/watch.png" alt="still loading" style="width: 100%; height: 100vh; object-fit: cover;">
             <div class="numbertext">
                 01
             </div>
@@ -60,15 +82,8 @@
                 <p><a class="border-buttom-hover-effect" href="#">View Project</a></p>
             </div>
         </div>
-
-
-        <div class="pagination">
-            <i class="fa fa-angle-left" style="font-size: 40px; font-weight: 600;" onclick="plusSlides(-1)"></i>
-
-            <i class="fa fa-angle-right" style="font-size: 40px; font-weight: 600;" onclick="plusSlides(1)"></i>
-        </div>
         <div class="mySlyder fade">
-            <img src="images/fitness.png" alt="still loading" style="width: 100%; object-fit: cover;">
+            <img src="images/fitness.png" alt="still loading" style="width: 100%;  height: 100vh; object-fit: cover;">
             <div class="numbertext">
                 02
             </div>
@@ -79,9 +94,11 @@
             </div>
 
         </div>
+        
 
         <div class="mySlyder fade">
-            <img src="images/fashion.png" alt="still loading" style="width: 100%; object-fit: cover;">
+            
+            <img src="images/fashion.png" alt="still loading" style="width: 100%;  height: 100vh;  object-fit: cover;">
             <div class="numbertext">
                 03
             </div>
@@ -90,11 +107,12 @@
                 <h1 class="mytext-for-photo2">Ultimate Neon.</h1>
                 <p><a class="border-buttom-hover-effect" href="#">View Project</a></p>
             </div>
+            
 
         </div>
 
         <div class="mySlyder fade">
-            <img src="images/housedesign.png" alt="still loading" style="width: 100%; object-fit: cover;">
+            <img src="images/housedesign.png" alt="still loading" style="width: 100%;  height: 100vh; object-fit: cover;">
             <div class="numbertext">
                 04
             </div>
@@ -108,7 +126,7 @@
 
 
         <div class="mySlyder fade">
-            <img src="images/colorsplash.png" alt="still loading" style="width: 100%; object-fit: cover;">
+            <img src="images/colorsplash.png" alt="still loading" style="width: 100%;  height: 100vh; object-fit: cover;">
             <div class="numbertext">
                 05
             </div>
@@ -120,15 +138,22 @@
 
         </div>
 
+        <div class="pagination">
+            <i class="fa fa-angle-left" style="font-size: 40px; font-weight: 600;" onclick="plusSlides(-1)"></i>
+            <div class="progress-bar">
+                <div class="content-items" id="myItems"></div>
+            </div>
+
+            <i class="fa fa-angle-right" style="font-size: 40px; font-weight: 600;" onclick="plusSlides(1)"></i>
+        </div>
+       
+
 
 
 
     </main>
 
-    <footer>
-
-    </footer>
-
+   
 
 
 
@@ -147,16 +172,28 @@
         var cursor = document.querySelector(".cursor");
         var cursor2 = document.querySelector(".cursor2");
 
-        document.addEventListener("mousemove", function(e) {
+        document.addEventListener("mousemove",function(e) {
             cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
             
         });
+        
+        const toggle = document.querySelector('.toggle-bars');
+
+        function myToggle() {
+            const myMenu = document.querySelector('.menu');
+            myMenu.style.display = "block";
+               
+        }
+
     
     </script>
 
 
 
+
     <script type="text/javaScript">
+
+
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -167,6 +204,7 @@
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlyder");
+        
 
         if (n > slides.length) {
             slideIndex = 1
@@ -180,7 +218,34 @@
         }
         
         slides[slideIndex-1].style.display = "block";
+
+        // function plusSlides() {
+        //     var elem = document.getElementById("myItems");
+        //     var width = 1;
+        //     var slides = setInterval(frame, 10);
+
+        //     function frame() {
+        //         if (width >= 0) {
+        //             clearInterval(slides)
+                    
+        //         }
+        //         else{
+        //             width++;
+        //             elem.style.width = width + '%';
+        //         }
+                
+        //     }
+            
+        // }
     }
+
+
+
+
+
+
+
+
 
     </script>
 

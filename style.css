@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   overflow: hidden;
 }
 
@@ -12,7 +12,7 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 3rem;
+  height: 48px;
   background: #262626;
 }
 
@@ -32,14 +32,21 @@ body{
   font-size: 23px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#myLogo{
+  position: absolute;
+  width: 28px;
+   margin-left: 8px;
+   top: 13px;
+    cursor: pointer
+}
 
 /* css styling for buy me bottun at the top right conner */
 button {
-  width: 7%;
+  width: 90px;
   position: absolute;
   float: right;
   right: 2rem;
-  height: 2rem;
+  height: 32px;
   border-radius: 4px;
   border: none;
   outline: none;
@@ -53,13 +60,56 @@ button:hover {
   background-color: #82b110;
 }
 
-/* css styling for the main container */
+
+
+
+/* css styling for the toggle container where the home and about page is */
+
+.menu {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 48px);
+  background-color: #000;
+  z-index: 100;
+  transition: 0.5s ease-in-out;
+  
+}
+.closemenu{
+  display: block;
+}
+
+/* nav container */
+
+.nav-container{
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  margin-left: 10%;
+}
+
+.nav-items li {
+  display: block;
+  list-style: none;
+  padding-top: 20px;
+  }
+.nav-items li a {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#808080;
+}
+
+/* css styling for the main container where we have the content*/
 .mySlyde-container {
   width: 100%;
-  height: calc(100% - 48px);
+  height: calc(100vh - 48px);
   border-top: 1px solid #000000;
+  position: relative;
   opacity: 1;
-
 }
 
 /* container that contain the toggle bar */
@@ -67,11 +117,12 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 4rem;
-  top: 5rem;
+  height: 35px;
+  top: 80px;
   left: 0;
+  z-index: 100;
 }
 /* Text in the left hand side of the toggle container */
 #banner-text {
@@ -87,30 +138,9 @@ button:hover {
 .toggle-bars {
   position: absolute;
   float: right;
-  right: 7rem;
+  right: 10%;
 }
 
-/* css styling for pagination */
-
-.pagination {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  bottom: 3rem;
-  left: 35rem;
-  width: 17%;
-  height: 4rem;
-}
-.fa-angle-left {
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.fa-angle-right {
-  color: #ffffff;
-  cursor: pointer;
-}
 
 /* css styling for toggle label */
 #icon {
@@ -197,16 +227,17 @@ button:hover {
 }
 /* container for the toggle container ends here */
 
+
 /* container for the first slide text infor  */
 .banner-infor {
   display: block;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 40%;
+  width: 50%;
   height: 20rem;
-  top: 20rem;
-  left: 8rem;
+  top: 40%;
+  left: 10%;
 }
 
 .mytext1 {
@@ -215,6 +246,7 @@ button:hover {
   letter-spacing: 4px;
   font-weight: 600;
   font-size: 20px;
+
 }
 .mytext2 {
   color: #ffffff;
@@ -222,7 +254,6 @@ button:hover {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 70px;
   padding-top: 2rem;
-  
 }
 .border-buttom-hover-effect {
   color: #ffffff;
@@ -241,8 +272,8 @@ button:hover {
   position: absolute;
   width: 40%;
   height: 20rem;
-  top: 18rem;
-  left: 8rem;
+  top: 40%;
+  left: 10%;
 }
 .mytext-for-fitness1 {
   color: #ffffff;
@@ -251,6 +282,7 @@ button:hover {
   font-weight: 500;
   font-size: 20px;
 }
+
 .mytext-for-fitness2 {
   color: #ffffff;
   font-weight: 800;
@@ -258,6 +290,7 @@ button:hover {
   font-size: 68px;
   padding-top: 1rem;
 }
+
 .border-buttom-hover-effect {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -275,9 +308,10 @@ button:hover {
   position: absolute;
   width: 40%;
   height: 20rem;
-  top: 17rem;
-  left: 8rem;
+  top: 40%;
+  left: 10%;
 }
+
 .mytext-for-photo1 {
   color: #ffffff;
   font-family: Franklin Gothic book;
@@ -285,6 +319,7 @@ button:hover {
   font-weight: 500;
   font-size: 20px;
 }
+
 .mytext-for-photo2 {
   color: #ffffff;
   font-weight: 800;
@@ -292,6 +327,7 @@ button:hover {
   font-size: 68px;
   padding-top: 1rem;
 }
+
 .border-buttom-hover-effect {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -309,8 +345,8 @@ button:hover {
   position: absolute;
   width: 40%;
   height: 20rem;
-  top: 17rem;
-  left: 8rem;
+  top: 40%;
+  left: 10%;
 }
 .mytext-for-house1 {
   color: #ffffff;
@@ -343,8 +379,8 @@ button:hover {
   position: absolute;
   width: 40%;
   height: 20rem;
-  top: 17rem;
-  left: 8rem;
+  top: 40%;
+  left: 10%;
 }
 
 .mytext-for-colors1 {
@@ -392,34 +428,7 @@ button:hover {
   transform-origin: left;
 }
 
-/* css styling for the toggle container */
 
-.toggle-container {
-  display: block;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  height: 31rem;
-  top: 8rem;
-  left: 5rem;
-  width: 88%;
-  visibility: hidden;
-}
-
-.toggle-item {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-.home-page {
-  text-decoration: none;
-  color: #808080;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 80px;
-  display: none;
-}
 
 /* css styling for number of slide */
 
@@ -456,7 +465,7 @@ button:hover {
   height: 40px;
   top: 0;
   left: 0;
-  border: 2px solid #fff;
+  border: 2px solid gray;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -474,11 +483,508 @@ button:hover {
   transform: translate(-50%, -50%);
   transition: 0.12s;
 }
-#icon + label > div:hover ~ .cursor {
-  transform: translate(50%, 50%) scale(2.5);
+
+/* label div:hover ~ .cursor {
+  transform:  translate(-50%, -50%) scale(1, 5);
   background-color: #c6c6c6;
-  opacity: 0.5;
+  opacity: .5;
 }
-#icon + label > div:hover ~ .cursor2 {
+div h2:hover .cursor2 {
+  opacity: 0;
+} */
+
+
+/* css styling for pagination */
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 150px;
+  position: relative;
+  margin: auto;
+  width: 230px;
+  height: 64px;
+}
+.fa-angle-left {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.fa-angle-right {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.progress-bar{
+  background-color: #808080;
+  height: 3px;
+  width: 70%;
+  border-radius: 20%;
+}
+.content-items{
+  background-color: white;
+  height: 3px;
   display: none;
+
 }
+
+.footer-infor{
+  display: block;
+  position: relative;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  width: 20%;
+  float: right;
+  right: 150px;
+  height: 253px;
+  bottom: -350px;
+  z-index: 22;
+}
+#myaddress-infor{
+  color: gray;
+  padding-top: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  
+}
+#myaddress-infor{
+  animation-name: infor;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes infor {
+  from{
+    bottom: 0;
+  }
+  to{
+    bottom: 100px;
+  }
+}
+.myaddress-infor{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+.conpany-id{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  padding-top: 35px;
+}
+
+#social-icon{
+  color: gray;
+  padding-top: 35px;
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css code for mobile screen size */
+
+@media screen and (max-width:778px){
+  body{
+    /* overflow: hidden; */
+  }
+
+  .mySlyde-container {
+    width: 100%;
+    height: calc(100vh - 48px);
+    border-top: 1px solid #000000;
+    position: relative;
+    opacity: 1;
+  }
+
+  #myLogo{
+   width: 25px;
+     margin-left: 10px;
+      cursor: pointer
+  }
+  #logo {
+    position: absolute;
+    left: 2rem;
+    color: #ffffff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  button {
+    width: 90px;
+    position: absolute;
+    float: right;
+    right: 15px;
+    height: 32px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #82b440;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    
+  }
+
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 35px;
+    top: 100px;
+    z-index: 100;
+  }
+
+  #banner-text {
+    color: #ffffff;
+    font-size: 30px;
+    padding-left: 18px;
+    font-family: stencil;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  /* css styling of toggle bar */
+  
+  .toggle-bars {
+    position: absolute;
+    float: right;
+    right: 13%;
+  }
+
+  .banner-infor {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 170px;
+    top: 40%;
+    left: 25px;
+  }
+  
+  .mytext1 {
+    color: #ffffff;
+    font-family: Franklin Gothic book;
+    letter-spacing: 6px;
+    font-weight: 600;
+    font-size: 17px;
+  
+  }
+  .mytext2 {
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 47px;
+    padding-top: 2rem;
+  }
+  .border-buttom-hover-effect {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2rem;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .banner-infor2 {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    top: 40%;
+    left: 18px;
+  }
+  .mytext-for-fitness1 {
+    color: #ffffff;
+    font-family: Franklin Gothic book;
+    letter-spacing: 7px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  .mytext-for-fitness2 {
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 48px;
+    padding-top: 2rem;
+  }
+  
+  .border-buttom-hover-effect {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2rem;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .banner-infor3 {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    top: 40%;
+    left: 18px;
+  }
+  
+  .mytext-for-photo1 {
+    color: #ffffff;
+    font-family: Franklin Gothic book;
+    letter-spacing: 7px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  .mytext-for-photo2 {
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 48px;
+    padding-top: 2rem;
+  }
+  
+  .border-buttom-hover-effect {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2rem;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  /* css design for  interior house design photo */
+  
+  .banner-infor4 {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+   width: 100%;
+    height: 170px;
+    top: 40%;
+    left: 18px;
+  }
+  .mytext-for-house1 {
+    color: #ffffff;
+    font-family: Franklin Gothic book;
+    letter-spacing: 7px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .mytext-for-house2 {
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 48px;
+    padding-top: 2rem;
+  }
+  .border-buttom-hover-effect {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2rem;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  /* css design for color splash photo */
+  
+  .banner-infor5 {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    top: 40%;
+    left: 18px;
+  }
+  
+  .mytext-for-colors1 {
+    color: #ffffff;
+    font-family: Franklin Gothic book;
+    letter-spacing: 7px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .mytext-for-colors2 {
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 48px;
+    padding-top: 2rem;
+  }
+  .border-buttom-hover-effect {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    left: 0;
+    padding-top: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    position: absolute;
+  }
+
+
+
+  .cursor {
+    display: none;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.13s;
+  }
+  .cursor2 {
+    display: none;
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    top: 0;
+    left: 0;
+    background-color: #c6c6c6;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.12s;
+  }
+  
+  
+
+  .numbertext {
+    display: none;
+    position: absolute;
+    top: 50%;
+    color: #ffffff;
+    right: 8px;
+    font-size: 40px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 500;
+  }
+
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 150px;
+    margin: auto;
+    position: relative;
+    width: 220px;
+    height: 64px;
+
+  }
+  .fa-angle-left {
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .fa-angle-right {
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .progress-bar{
+    background-color: #808080;
+    height: 3px;
+    width: 70%;
+    border-radius: 20%;
+  }
+  .content-items{
+    background-color: white;
+    height: 3px;
+    display: none;
+  
+  }
+
+  /* companies information */
+
+  .menu {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 48px);
+    background-color: #000;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+    
+  }
+
+  .nav-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    top: 20%;
+  }
+  .nav-items li a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#808080;
+  }
+
+  .footer-infor{
+    display: none;
+    position: relative;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    width: 20%;
+    float: right;
+    right: 150px;
+    height: 253px;
+    bottom: -350px;
+    z-index: 22;
+  }
+
+  #myaddress-infor{
+    color: gray;
+    padding-top: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+  }
+
+  
+  
+  
+
+  
+}
+
+
+
