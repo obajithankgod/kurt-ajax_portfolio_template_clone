@@ -71,10 +71,9 @@ button:hover {
   align-items: center;
   position: absolute;
   width: 100%;
-  height: calc(100vh - 48px);
+  height: calc(100% - 48px);
   background-color: #000;
   z-index: 100;
-  transition: 0.5s ease-in-out;
   
 }
 .closemenu{
@@ -118,7 +117,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 95%;
   height: 35px;
   top: 80px;
   left: 0;
@@ -138,7 +137,7 @@ button:hover {
 .toggle-bars {
   position: absolute;
   float: right;
-  right: 10%;
+  right: 5%;
 }
 
 
@@ -234,32 +233,33 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 50%;
+  width: 80%;
   height: 20rem;
   top: 40%;
   left: 10%;
+  
 }
 
 .mytext1 {
   color: #ffffff;
   font-family: Franklin Gothic book;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 
 }
 .mytext2 {
   color: #ffffff;
   font-weight: 800;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 70px;
+  font-size: 60px;
   padding-top: 2rem;
 }
 .border-buttom-hover-effect {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 2rem;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -270,7 +270,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 40%;
+  width: 80%;
   height: 20rem;
   top: 40%;
   left: 10%;
@@ -278,7 +278,7 @@ button:hover {
 .mytext-for-fitness1 {
   color: #ffffff;
   font-family: Franklin Gothic book;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   font-weight: 500;
   font-size: 20px;
 }
@@ -287,7 +287,7 @@ button:hover {
   color: #ffffff;
   font-weight: 800;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 68px;
+  font-size: 60px;
   padding-top: 1rem;
 }
 
@@ -295,7 +295,7 @@ button:hover {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 2rem;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -306,7 +306,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 40%;
+  width: 80%;
   height: 20rem;
   top: 40%;
   left: 10%;
@@ -315,16 +315,16 @@ button:hover {
 .mytext-for-photo1 {
   color: #ffffff;
   font-family: Franklin Gothic book;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .mytext-for-photo2 {
   color: #ffffff;
   font-weight: 800;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 68px;
+  font-size: 60px;
   padding-top: 1rem;
 }
 
@@ -332,7 +332,7 @@ button:hover {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 2rem;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -343,7 +343,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 40%;
+  width: 80%;
   height: 20rem;
   top: 40%;
   left: 10%;
@@ -351,7 +351,7 @@ button:hover {
 .mytext-for-house1 {
   color: #ffffff;
   font-family: Franklin Gothic book;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   font-weight: 500;
   font-size: 20px;
 }
@@ -359,14 +359,14 @@ button:hover {
   color: #ffffff;
   font-weight: 800;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 68px;
+  font-size: 60px;
   padding-top: 1.5rem;
 }
 .border-buttom-hover-effect {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 2rem;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -377,7 +377,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 40%;
+  width: 80%;
   height: 20rem;
   top: 40%;
   left: 10%;
@@ -386,15 +386,15 @@ button:hover {
 .mytext-for-colors1 {
   color: #ffffff;
   font-family: Franklin Gothic book;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
 }
 .mytext-for-colors2 {
   color: #ffffff;
   font-weight: 800;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 68px;
+  font-size: 60px;
   padding-top: 1.5rem;
 }
 .border-buttom-hover-effect {
@@ -434,10 +434,10 @@ button:hover {
 
 .numbertext {
   position: absolute;
-  top: 50%;
+  top: 48%;
   color: #ffffff;
-  right: 8rem;
-  font-size: 55px;
+  right: 4rem;
+  font-size: 48px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 500;
@@ -445,7 +445,8 @@ button:hover {
 
 .numbertext::after {
   content: "/05";
-  font-size: 15px;
+  font-size: 18px;
+  padding-left: 15px;
   right: 1rem;
   top: -20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -456,6 +457,7 @@ button:hover {
 
 .mySlyder {
   display: none;
+  
 }
 
 /* css  styling cursor effect  */
@@ -651,7 +653,7 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100%;
+    width: 95%;
     height: 35px;
     top: 100px;
     z-index: 100;
@@ -678,10 +680,11 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 90%;
+    width: 80%;
+    left: 10%;
+    margin: auto;
     height: 170px;
     top: 40%;
-    left: 25px;
   }
   
   .mytext1 {
@@ -696,7 +699,7 @@ div h2:hover .cursor2 {
     color: #ffffff;
     font-weight: 800;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 47px;
+    font-size: 40px;
     padding-top: 2rem;
   }
   .border-buttom-hover-effect {
@@ -712,10 +715,11 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 90%;
+    width: 80%;
+    left: 10%;
     height: 170px;
     top: 40%;
-    left: 18px;
+    margin: auto;
   }
   .mytext-for-fitness1 {
     color: #ffffff;
@@ -729,7 +733,7 @@ div h2:hover .cursor2 {
     color: #ffffff;
     font-weight: 800;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 48px;
+    font-size: 35px;
     padding-top: 2rem;
   }
   
@@ -746,10 +750,11 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 90%;
+    width: 80%;
+    left: 10%;
     height: 170px;
     top: 40%;
-    left: 18px;
+    margin: auto;
   }
   
   .mytext-for-photo1 {
@@ -764,7 +769,7 @@ div h2:hover .cursor2 {
     color: #ffffff;
     font-weight: 800;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 48px;
+    font-size: 33px;
     padding-top: 2rem;
   }
   
@@ -783,10 +788,11 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-   width: 90%;
+    width: 80%;
+    left: 10%;
     height: 170px;
     top: 40%;
-    left: 18px;
+    margin: auto;
   }
   .mytext-for-house1 {
     color: #ffffff;
@@ -799,7 +805,7 @@ div h2:hover .cursor2 {
     color: #ffffff;
     font-weight: 800;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 48px;
+    font-size: 35px;
     padding-top: 2rem;
   }
   .border-buttom-hover-effect {
@@ -817,10 +823,11 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 90%;
+    width: 80%;
+    left: 10%;
     height: 170px;
     top: 40%;
-    left: 18px;
+    margin: auto;
   }
   
   .mytext-for-colors1 {
@@ -834,7 +841,7 @@ div h2:hover .cursor2 {
     color: #ffffff;
     font-weight: 800;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 48px;
+    font-size: 35px;
     padding-top: 2rem;
   }
   .border-buttom-hover-effect {
