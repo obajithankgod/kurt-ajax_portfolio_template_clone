@@ -603,7 +603,7 @@ div h2:hover .cursor2 {
 
 @media screen and (max-width:778px){
   body{
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 
   .mySlyde-container {
@@ -712,7 +712,7 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 170px;
     top: 40%;
     left: 18px;
@@ -746,7 +746,7 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 170px;
     top: 40%;
     left: 18px;
@@ -783,7 +783,7 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-   width: 100%;
+   width: 90%;
     height: 170px;
     top: 40%;
     left: 18px;
@@ -817,7 +817,7 @@ div h2:hover .cursor2 {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 170px;
     top: 40%;
     left: 18px;
